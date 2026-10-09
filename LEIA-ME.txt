@@ -1,0 +1,49 @@
+CONTROLE DE COBERTURA — PRIMEIRA VERSÃO PWA
+===========================================
+
+O QUE ESTA VERSÃO FAZ
+- Mostra um mapa navegável centrado na região de Itabatã.
+- Permite criar territórios.
+- Permite cadastrar quadras com nome/número.
+- Permite tocar no mapa para registrar uma localização aproximada de quadra.
+- Permite definir status, percentual estimado e observações.
+- Calcula um percentual geral simples: concluídas contam 100%, em andamento contam o percentual definido e pendentes contam 0%.
+- Salva os dados no armazenamento local do navegador.
+- Exporta um backup JSON.
+- Pode ser instalada como PWA quando hospedada em HTTPS.
+
+LIMITAÇÕES IMPORTANTES
+- Esta é uma primeira versão funcional, não um app publicado.
+- Os limites das quadras ainda não são desenhados automaticamente. Por enquanto, cada quadra é representada por um marcador no mapa.
+- O mapa base usa OpenStreetMap pela internet. Os dados cadastrados ficam no navegador deste aparelho; não há sincronização entre aparelhos.
+- O salvamento local não substitui backups. Use “Exportar backup” regularmente.
+- A instalação PWA e o Service Worker exigem hospedagem HTTPS (ou localhost). Abrir index.html diretamente como arquivo não ativa a instalação/offline.
+- Leaflet e o mapa carregam de serviços externos, então é necessária conexão para carregar o mapa.
+
+COMO PUBLICAR GRATUITAMENTE NO GITHUB PAGES
+1. No computador, entre em https://github.com e crie uma conta ou entre.
+2. Crie um repositório público, por exemplo: controle-cobertura.
+3. Envie todos os arquivos desta pasta para a raiz do repositório.
+4. No repositório, abra Settings > Pages.
+5. Em Build and deployment, escolha Deploy from a branch.
+6. Escolha a branch main e a pasta /(root), depois Save.
+7. Aguarde o GitHub mostrar o endereço publicado, parecido com https://seu-usuario.github.io/controle-cobertura/.
+8. Abra esse endereço no Chrome do Android.
+
+COMO INSTALAR NO ANDROID
+1. Abra o endereço HTTPS no Google Chrome.
+2. Abra o menu ⋮ do Chrome.
+3. Escolha “Instalar app” ou “Adicionar à tela inicial” (o nome pode variar).
+4. Confirme. O ícone Controle de Cobertura aparecerá na tela inicial.
+
+COMO USAR
+1. Toque em + Território e crie Território 1, Território 2 etc.
+2. Selecione o território desejado.
+3. Digite o nome/número da quadra.
+4. Para registrar uma localização, toque no mapa; se preferir, use + Quadra sem localização.
+5. Abra a quadra na lista, defina status, percentual e observações.
+6. Toque em Salvar alterações.
+7. Use Exportar backup para guardar seus dados.
+
+PRIVACIDADE E BACKUP
+Os dados ficam neste navegador/aparelho. Limpar os dados do navegador pode apagar as quadras e observações. Exporte backups regularmente. Não armazene informações pessoais sensíveis nas observações.
