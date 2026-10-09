@@ -1,0 +1,14 @@
+{
+  "name": "Controle de Cobertura",
+  "short_name": "Cobertura",
+  "description": "Acompanhamento de cobertura por territórios e quadras em Itabatã.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2f5f9",
+  "theme_color": "#0b2545",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
